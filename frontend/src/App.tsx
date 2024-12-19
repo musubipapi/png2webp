@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Greet } from "../wailsjs/go/main/App";
 import { main } from "../wailsjs/go/models";
 import { Button } from "./components/ui/button";
+import Layout from "./components/layout";
+import { DragContainer } from "./components/drop-zone";
 
 function App() {
   const [resultText, setResultText] = useState(
@@ -24,8 +26,11 @@ function App() {
   }
 
   return (
-    <div id="App">
-      <div className="w-screen h-screen bg-slate-200"></div>
+    <div id="App"> <div className="bg-slate-100 w-screen h-screen">
+      <Layout>
+        <DragContainer />
+      </Layout>
+    </div>
     </div>
   );
 }
