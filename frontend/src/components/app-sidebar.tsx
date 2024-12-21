@@ -7,12 +7,21 @@ import {
   SidebarGroupLabel,
   SidebarHeader,
 } from "@/components/ui/sidebar";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select";
+import { AppSelect } from "./app-select";
 
 export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader>
-        <div className="ml-2 font-bold">app-tools</div>
+        <div className="text-xl font-bold">Tools</div>
+        <AppSelect />
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
