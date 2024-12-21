@@ -3,3 +3,7 @@
 import {main} from '../models';
 
 export function Greet(arg1:main.Person):Promise<string>;
+
+export function ReadFile(arg1:string):Promise<string>;
+
+export function SelectFile():Promise<string>;
